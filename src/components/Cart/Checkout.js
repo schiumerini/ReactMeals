@@ -45,6 +45,12 @@ const Checkout = (props) => {
       });
     }
     // Submit cart data
+    props.onConfirmOrder({
+      name: enteredName,
+      street: enteredStreet,
+      city: enteredCity,
+      postalCode: enteredPostalCode,
+    });
   };
 
   return (
